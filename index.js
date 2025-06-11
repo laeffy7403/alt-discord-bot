@@ -28,8 +28,11 @@ client.on("messageCreate", message => {
   console.log("========================");
   
   if (message.author.bot) return;
+
+  const msgContent = message.content.toLowerCase();
   
-  if (message.content.toLowerCase() === "-- wes --") {
+  var signal = ["-- wes --"];
+  if (signal.some(trigger => msgContent.includes(trigger))) {
     message.channel.send("receive signal from wes!");
   }
 })
