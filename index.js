@@ -1,3 +1,5 @@
+require('dotenv').config();
+// Use process.env.DISCORD_TOKEN instead of hardcoded token
 const express = require("express")
 const app = express();
 
