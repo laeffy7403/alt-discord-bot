@@ -14,6 +14,16 @@ app.get("/", (req, res) => {
 const Discord = require("discord.js")
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
+// const { Client, GatewayIntentBits } = require('discord.js');
+
+// const client = new Client({
+//     intents: [
+//         GatewayIntentBits.Guilds,
+//         GatewayIntentBits.GuildMessages,
+//         GatewayIntentBits.MessageContent,  // This is crucial!
+//         GatewayIntentBits.DirectMessages
+//     ]
+// });
 
 
 
@@ -755,9 +765,6 @@ client.on('interactionCreate', async interaction => {
 		await interaction.followUp('Pong again!');
 	}
 });
-
-
-
 
 client.login(process.env.token)  
 const mySecret = process.env['token']
