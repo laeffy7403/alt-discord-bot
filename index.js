@@ -1,7 +1,7 @@
-require('dotenv').config();
-// Use process.env.DISCORD_TOKEN instead of hardcoded token
 const express = require("express")
 const app = express();
+require('dotenv').config();
+// Use process.env.DISCORD_TOKEN instead of hardcoded token
 
 app.listen(3000, () => {
   console.log("Project is running!");
@@ -44,7 +44,7 @@ const client = new Discord.Client({
   const channelId = '1380085584394981428'; // change this
   // const interval = 10 * 60 * 1000; // 10 minutes in milliseconds
   // const interval = 5 * 60 * 1000; // 5 minutes in milliseconds
-  const interval = 15 * 1000; // 15 sec in milliseconds
+  const interval = 20 * 1000; // 20 sec in milliseconds
   var i = 0;
 
   setInterval(() => {
