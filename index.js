@@ -20,30 +20,12 @@ const client = new Discord.Client({
     Discord.Intents.FLAGS.GUILD_MESSAGES
   ]
 });
-// client.on("messageCreate", message => {
-//   console.log("=== MESSAGE DETECTED ===");
-//   console.log("Author:", message.author.username);
-//   console.log("Content:", message.content);
-//   console.log("Is bot:", message.author.bot);
-//   console.log("========================");
-  
-//   if (message.author.bot) return;
-
-//   const msgContent = message.content.toLowerCase();
-  
-//   var signal = ["-- wes --"];
-//   if (signal.some(trigger => msgContent.includes(trigger))) {
-//     message.channel.send("receive signal from wes!");
-//   }
-// })
-
 
   client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}`);
 
-  const channelId = '1380085584394981428'; // change this
+  const channelId = '1380085584394981428'; 
   // const interval = 10 * 60 * 1000; // 10 minutes in milliseconds
-  // const interval = 5 * 60 * 1000; // 5 minutes in milliseconds
   const interval = 20 * 1000; // 20 sec in milliseconds
   var i = 0;
 
@@ -52,6 +34,7 @@ const client = new Discord.Client({
     if (channel) {
       i++;
       channel.send(`<@970283613818073098>`);
+      channel.send(`<@998495427026493501>`);
     } else {
       console.log('Channel not found.');
     }
