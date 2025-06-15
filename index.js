@@ -26,7 +26,7 @@ const client = new Discord.Client({
 
   const channelId = '1380085584394981428'; 
   // const interval = 10 * 60 * 1000; // 10 minutes in milliseconds
-  const interval = 20 * 1000; // 20 sec in milliseconds
+  const interval = 30 * 1000; // 20 sec in milliseconds
   var i = 0;
 
   setInterval(() => {
